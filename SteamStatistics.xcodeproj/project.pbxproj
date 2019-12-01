@@ -10,6 +10,7 @@
 		70D2CB60AABC2F4E512C2CAC /* Pods_SteamStatisticsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72A6EEFE75D4B231B92C930 /* Pods_SteamStatisticsTests.framework */; };
 		8F5CE73523939CF800819162 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5CE73423939CF800819162 /* R.generated.swift */; };
 		8F5CE73823939D8E00819162 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F5CE73A23939D8E00819162 /* Localizable.strings */; };
+		8F5CE73F2393A14D00819162 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5CE73E2393A14D00819162 /* UserDefaultsService.swift */; };
 		8F6190FC23939A3D0038CBA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6190FB23939A3D0038CBA8 /* AppDelegate.swift */; };
 		8F6190FE23939A3D0038CBA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6190FD23939A3D0038CBA8 /* SceneDelegate.swift */; };
 		8F61910023939A3D0038CBA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6190FF23939A3D0038CBA8 /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		6DCF47E10A08132BA9D555BC /* Pods-SteamStatisticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteamStatisticsTests.release.xcconfig"; path = "Target Support Files/Pods-SteamStatisticsTests/Pods-SteamStatisticsTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F5CE73423939CF800819162 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		8F5CE73923939D8E00819162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8F5CE73E2393A14D00819162 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		8F6190F823939A3D0038CBA8 /* SteamStatistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamStatistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F6190FB23939A3D0038CBA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F6190FD23939A3D0038CBA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F5CE73B2393A07C00819162 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8F5CE73C2393A08E00819162 /* Authentication */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8F5CE73C2393A08E00819162 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		8F5CE73D2393A13500819162 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F5CE73E2393A14D00819162 /* UserDefaultsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		8F6190EF23939A3D0038CBA8 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +158,8 @@
 		8F6190FA23939A3D0038CBA8 /* SteamStatistics */ = {
 			isa = PBXGroup;
 			children = (
+				8F5CE73B2393A07C00819162 /* Modules */,
+				8F5CE73D2393A13500819162 /* Services */,
 				8F6190FB23939A3D0038CBA8 /* AppDelegate.swift */,
 				8F6190FD23939A3D0038CBA8 /* SceneDelegate.swift */,
 				8F6190FF23939A3D0038CBA8 /* ViewController.swift */,
@@ -420,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F5CE73F2393A14D00819162 /* UserDefaultsService.swift in Sources */,
 				8F61910023939A3D0038CBA8 /* ViewController.swift in Sources */,
 				8F61910623939A3D0038CBA8 /* SteamStatistics.xcdatamodeld in Sources */,
 				8F5CE73523939CF800819162 /* R.generated.swift in Sources */,
